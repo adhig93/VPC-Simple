@@ -1,5 +1,5 @@
 variable "region" {
-	default = "ap-south-1"
+	default = "us-east-1"
 }
 
 variable "vpc_cidr" {
@@ -7,5 +7,5 @@ variable "vpc_cidr" {
 }
 
 variable "availability_zone" {
-	default = "ap-south-1a"
+	default = "us-east-1a"
 }
