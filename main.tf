@@ -61,7 +61,7 @@ resource "aws_instance" "instance-for-dev" {
 	subnet_id = aws_subnet.publicsub-for-dev.id	
 	vpc_security_group_ids = [aws_security_group.sg-for-dev.id]
 	instance_type = "t2.micro"
-	ami = "ami-0c1a7f89451184c8b"
+	ami = "ami-09e67e426f25ce0d7"
 	key_name = "terraform"
 	tags = {
 		Name = "dev-app"
