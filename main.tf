@@ -67,23 +67,23 @@ resource "aws_instance" "instance-for-dev" {
 		Name = "dev-app"
 	}
 	
-	connection {
+/*	connection {
 		type = "ssh"
 		user = "ubuntu"
 		private_key = "terraform"
 		host = aws_instance.instance-for-dev.public_ip
 	}
 	
-/*	provisioner "file" {
+	provisioner "file" {
 		source = "./get-docker.sh"
 		destination = "/home/ubuntu/get-docker.sh"
-	}*/
+	}
 	
 	provisioner "remote-exec" {
 		inline = [
 			"touch f1 f2 f3"
 		]
-	}
+	}*/
 	
 }
 
